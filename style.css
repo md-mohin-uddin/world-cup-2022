@@ -1,5 +1,5 @@
 body {
-    font-family: 'Poppins', sans-serif;
+
     background-color: #fff;
 
 }
@@ -25,10 +25,11 @@ footer {
 h1 {
     font-size: 50px;
     color: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 
 p {
-    font-size: 16px;
+    font-size: 12px;
     color: #fff;
 }
 
@@ -49,16 +50,84 @@ p {
 }
 
 .header1 {
+    display: flex;
+    justify-content: space-evenly;
     background-color: #fff;
+    width: 80%;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.match-details {
+    display: grid;
+    grid-template-columns: 25ch auto;
 }
 
 .match-schedule {
-    width: 30%;
     background-color: #000;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    /* padding: 10px;
-    margin: 5px; */
+    grid-template-rows: repeat(20px 20px 20px);
+    padding: 8px;
+    margin: 5px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.match-schedule a {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#match-blog {
+    background-color: #DD0000;
+    color: #fff;
+}
+
+.all-transfer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.transfer {
+    margin: 5px;
+    background-color: lightgrey;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.transfer img {
+    width: 100%;
+}
+
+.transfer a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 0 10px;
+}
+
+.icon-transfer {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icon-transfer p {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+.fa-clock,
+.fa-comment {
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    padding: 0 5px;
 }
 
 .footer {
